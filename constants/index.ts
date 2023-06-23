@@ -4,6 +4,18 @@ export const CONSTANTS = {
     GROUP_SETTINGS: [
         {
             SECTION_NAME: "basic-information",
+            INITIAL_STATE: {
+                client_group_name: '',
+                email_id: '',
+                mobile_no: '',
+                address_type: '',
+                premises: '',
+                address_line_1: '',
+                address_line_2: '',
+                state: '',
+                city: '',
+                pincode: '',
+            },
             SECTION: [
                 {
                     headline: "Basic Information",
@@ -155,45 +167,55 @@ export const CONSTANTS = {
         },
         {
             SECTION_NAME: "client-access",
+            INITIAL_STATE: {
+                client_admin_1_first_name: "",
+                client_admin_1_last_name: "",
+                client_admin_1_email_id: "",
+                client_admin_1_mobile_no: "",
+                client_admin_2_first_name: "",
+                client_admin_2_last_name: "",
+                client_admin_2_email_id: "",
+                client_admin_2_mobile_no: "",
+            },
             SECTION: [
                 {
                     headline: "Client Admin #1:",
                     content: [
                         {
-                            htmlFor: "first_name",
+                            htmlFor: "client_admin_1_first_name",
                             label: "First Name",
                             type: "text",
-                            id: "first_name",
+                            id: "client_admin_1_first_name",
                             placeholder: "Enter first name",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "last_name",
+                            htmlFor: "client_admin_1_last_name",
                             label: "Last Name",
                             type: "text",
-                            id: "last_name",
+                            id: "client_admin_1_last_name",
                             placeholder: "Enter last name",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "email_id",
+                            htmlFor: "client_admin_1_email_id",
                             label: "Email ID",
                             type: "email",
-                            id: "email_id",
+                            id: "client_admin_1_email_id",
                             placeholder: "Enter email",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "mobile_no",
+                            htmlFor: "client_admin_1_mobile_no",
                             label: "Mobile No.",
                             type: "text",
-                            id: "mobile_no",
+                            id: "client_admin_1_mobile_no",
                             placeholder: "Enter mobile no",
                             required: true,
                             style: {},
@@ -205,40 +227,40 @@ export const CONSTANTS = {
                     headline: "Client Admin #2:",
                     content: [
                         {
-                            htmlFor: "first_name",
+                            htmlFor: "client_admin_2_first_name",
                             label: "First Name",
                             type: "text",
-                            id: "first_name",
+                            id: "client_admin_2_first_name",
                             placeholder: "Enter first name",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "last_name",
+                            htmlFor: "client_admin_2_last_name",
                             label: "Last Name",
                             type: "text",
-                            id: "last_name",
+                            id: "client_admin_2_last_name",
                             placeholder: "Enter last name",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "email_id",
+                            htmlFor: "client_admin_2_email_id",
                             label: "Email ID",
                             type: "email",
-                            id: "email_id",
+                            id: "client_admin_2_email_id",
                             placeholder: "Enter email",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "mobile_no",
+                            htmlFor: "client_admin_2_mobile_no",
                             label: "Mobile No.",
                             type: "text",
-                            id: "mobile_no",
+                            id: "client_admin_2_mobile_no",
                             placeholder: "Enter mobile no",
                             required: true,
                             style: {},
@@ -250,45 +272,55 @@ export const CONSTANTS = {
         },
         {
             SECTION_NAME: "firm-access",
+            INITIAL_STATE: {
+                firm_admin_1_first_name: "",
+                firm_admin_1_last_name: "",
+                firm_admin_1_email_id: "",
+                firm_admin_1_mobile_no: "",
+                firm_admin_2_first_name: "",
+                firm_admin_2_last_name: "",
+                firm_admin_2_email_id: "",
+                firm_admin_2_mobile_no: "",
+            },
             SECTION: [
                 {
                     headline: "Firm Admin #1:",
                     content: [
                         {
-                            htmlFor: "first_name",
-                            label: "First Name",
-                            type: "text",
-                            id: "first_name",
-                            placeholder: "Enter first name",
-                            required: true,
-                            style: {},
-                            options: []
-                        },
-                        {
-                            htmlFor: "last_name",
-                            label: "Last Name",
-                            type: "text",
-                            id: "last_name",
-                            placeholder: "Enter last name",
-                            required: true,
-                            style: {},
-                            options: []
-                        },
-                        {
-                            htmlFor: "email_id",
+                            htmlFor: "firm_admin_1_email_id",
                             label: "Email ID",
                             type: "email",
-                            id: "email_id",
+                            id: "firm_admin_1_email_id",
                             placeholder: "Enter email",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "mobile_no",
+                            htmlFor: "firm_admin_1_first_name",
+                            label: "First Name",
+                            type: "text",
+                            id: "firm_admin_1_first_name",
+                            placeholder: "Enter first name",
+                            required: true,
+                            style: {},
+                            options: []
+                        },
+                        {
+                            htmlFor: "firm_admin_1_last_name",
+                            label: "Last Name",
+                            type: "text",
+                            id: "firm_admin_1_last_name",
+                            placeholder: "Enter last name",
+                            required: true,
+                            style: {},
+                            options: []
+                        },
+                        {
+                            htmlFor: "firm_admin_1_mobile_no",
                             label: "Mobile No.",
                             type: "text",
-                            id: "mobile_no",
+                            id: "firm_admin_1_mobile_no",
                             placeholder: "Enter mobile no",
                             required: true,
                             style: {},
@@ -300,40 +332,40 @@ export const CONSTANTS = {
                     headline: "Firm Admin #2:",
                     content: [
                         {
-                            htmlFor: "first_name",
-                            label: "First Name",
-                            type: "text",
-                            id: "first_name",
-                            placeholder: "Enter first name",
-                            required: true,
-                            style: {},
-                            options: []
-                        },
-                        {
-                            htmlFor: "last_name",
-                            label: "Last Name",
-                            type: "text",
-                            id: "last_name",
-                            placeholder: "Enter last name",
-                            required: true,
-                            style: {},
-                            options: []
-                        },
-                        {
-                            htmlFor: "email_id",
+                            htmlFor: "firm_admin_2_email_id",
                             label: "Email ID",
                             type: "email",
-                            id: "email_id",
+                            id: "firm_admin_2_email_id",
                             placeholder: "Enter email",
                             required: true,
                             style: {},
                             options: []
                         },
                         {
-                            htmlFor: "mobile_no",
+                            htmlFor: "firm_admin_2_first_name",
+                            label: "First Name",
+                            type: "text",
+                            id: "firm_admin_2_first_name",
+                            placeholder: "Enter first name",
+                            required: true,
+                            style: {},
+                            options: []
+                        },
+                        {
+                            htmlFor: "firm_admin_2_last_name",
+                            label: "Last Name",
+                            type: "text",
+                            id: "firm_admin_2_last_name",
+                            placeholder: "Enter last name",
+                            required: true,
+                            style: {},
+                            options: []
+                        },
+                        {
+                            htmlFor: "firm_admin_2_mobile_no",
                             label: "Mobile No.",
                             type: "text",
-                            id: "mobile_no",
+                            id: "firm_admin_2_mobile_no",
                             placeholder: "Enter mobile no",
                             required: true,
                             style: {},

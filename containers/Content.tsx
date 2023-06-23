@@ -4,7 +4,7 @@ import CreateDynamicElement from './CreateDynamicElement'
 import styles from "./page.module.css";
 
 const Content = (contentProps: contentPropsType) => {
-    const { content } = contentProps;
+    const { content, state, handleChange } = contentProps;
     return (
         <div
             className={styles.container}>
@@ -24,6 +24,8 @@ const Content = (contentProps: contentPropsType) => {
                             placeholder={data.placeholder}
                             required={data.required}
                             options={data.options}
+                            state={state}
+                            handleChange={handleChange}
                         />
                     </div>
                 )

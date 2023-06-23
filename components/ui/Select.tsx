@@ -5,7 +5,9 @@ type selectPropsType = {
     id: string,
     placeholder: string,
     required: boolean,
-    options: Array<{ option: string, value: string }>
+    options: Array<{ option: string, value: string }>,
+    handleChange: any,
+    state: any
 }
 
 const Select = (selectProps: selectPropsType) => {
@@ -14,13 +16,19 @@ const Select = (selectProps: selectPropsType) => {
         id,
         placeholder,
         required,
-        options
+        options,
+        handleChange,
+        state
     } = selectProps;
     return (
         <select
-            id="countries"
+            id={id}
             className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg 
-            focus:ring-blue-500 focus:border-blue-500 text-base font-bold p-4 w-72">
+            focus:ring-blue-500 focus:border-blue-500 text-base font-bold p-2 w-72"
+            name={id}
+            onChange={(e) => handleChange(e)}
+            defaultValue={state[id]}
+        >
             {options.map((option, idx) => {
                 return (
                     <option key={idx} value={option.value}>{option.option}</option>

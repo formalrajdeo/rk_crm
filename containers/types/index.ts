@@ -16,11 +16,15 @@ type sectionPropsType = {
         content: contentType
     }>,
     section: number,
-    setSection: any
+    setSection: any,
+    initialState: any,
+    notify: any
 }
 
 type contentPropsType = {
-    content: contentType
+    content: contentType,
+    state: string,
+    handleChange: any
 }
 
 type dynamicPropsType = {
@@ -28,7 +32,9 @@ type dynamicPropsType = {
     id: string,
     placeholder: string,
     required: boolean,
-    options: Array<{ option: string, value: string }>
+    options: Array<{ option: string, value: string }>,
+    state: string,
+    handleChange: any
 }
 
 type headlinePropsType = {

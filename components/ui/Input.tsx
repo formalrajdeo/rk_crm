@@ -4,7 +4,9 @@ type inputPropsType = {
     type: string,
     id: string,
     placeholder: string,
-    required: boolean
+    required: boolean,
+    state: any,
+    handleChange: any
 }
 
 const InputText = (inputProps: inputPropsType) => {
@@ -13,15 +15,20 @@ const InputText = (inputProps: inputPropsType) => {
         id,
         placeholder,
         required,
+        state,
+        handleChange
     } = inputProps;
 
     return (
         <input
             type={type}
             id={id}
-            className="border border-blue-400 rounded-lg text-base font-bold p-4"
+            className="border border-blue-400 rounded-lg text-base font-bold p-2"
             placeholder={placeholder}
             required={required}
+            name={id}
+            value={state[id]}
+            onChange={(e) => handleChange(e)}
         />
     )
 }

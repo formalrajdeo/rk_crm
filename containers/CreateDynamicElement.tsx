@@ -9,6 +9,8 @@ const checkHtmlType = (dynamicProps: dynamicPropsType) => {
         placeholder,
         required,
         options,
+        state,
+        handleChange
     } = dynamicProps;
 
     if (CONSTANTS.HTML_INPUT_ELEMENTS.includes(type)) {
@@ -18,6 +20,8 @@ const checkHtmlType = (dynamicProps: dynamicPropsType) => {
                 id={id}
                 placeholder={placeholder}
                 required={required}
+                state={state}
+                handleChange={handleChange}
             />
         )
     }
@@ -30,6 +34,8 @@ const checkHtmlType = (dynamicProps: dynamicPropsType) => {
                 placeholder={placeholder}
                 required={required}
                 options={options}
+                state={state}
+                handleChange={handleChange}
             />
         )
     }
