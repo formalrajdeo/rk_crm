@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui'
 import Image from 'next/image'
 import React from 'react'
 import { GrFormClose } from 'react-icons/gr'
