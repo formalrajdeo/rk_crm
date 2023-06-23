@@ -14,7 +14,7 @@ const Navbar = () => {
                         D'LittMan
                     </span>
                 </div>
-                <div className="flex justify-end items-center w-1/2">
+                <div className="flex justify-end items-center w-1/2 max-sm:hidden">
                     <div className="p-4 hover:text-blue-600">
                         <BsSearch fontSize={'1.3em'} />
                     </div>

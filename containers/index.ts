@@ -1,1 +1,2 @@
-export { default as BasicInformation } from './BasicInformation'
+export { default as Section } from './Section'
+export { default as SavedPage } from './SavedPage'

@@ -4,7 +4,7 @@ type inputPropsType = {
     type: string,
     id: string,
     placeholder: string,
-    required: boolean,
+    required: boolean
 }
 
 const InputText = (inputProps: inputPropsType) => {
@@ -12,7 +12,7 @@ const InputText = (inputProps: inputPropsType) => {
         type,
         id,
         placeholder,
-        required
+        required,
     } = inputProps;
 
     return (

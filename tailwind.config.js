@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         'sidebar-black': '#333333',
-        'burgundy': '#7E0417'
+        'burgundy': '#7E0417',
+        'header-bg': '#E7F3F7'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

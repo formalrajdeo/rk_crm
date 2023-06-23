@@ -1,13 +1,6 @@
 import { Input, Select } from '@/components/ui';
+import { CONSTANTS } from '@/constants';
 import React from 'react'
-
-type dynamicPropsType = {
-    type: string,
-    id: string,
-    placeholder: string,
-    required: boolean,
-    options: Array<{ option: string, value: string }>
-}
 
 const checkHtmlType = (dynamicProps: dynamicPropsType) => {
     const {
@@ -15,10 +8,10 @@ const checkHtmlType = (dynamicProps: dynamicPropsType) => {
         id,
         placeholder,
         required,
-        options
+        options,
     } = dynamicProps;
 
-    if (["email", "text"].includes(type)) {
+    if (CONSTANTS.HTML_INPUT_ELEMENTS.includes(type)) {
         return (
             <Input
                 type={type}
