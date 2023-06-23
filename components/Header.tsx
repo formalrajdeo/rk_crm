@@ -1,10 +1,6 @@
-import { BASIC_INFO, CLIENT_ACCESS, FIRM_ACCESS } from '@/assets/images'
 import React from 'react'
+import { BASIC_INFO, CLIENT_ACCESS, FIRM_ACCESS } from '@/assets/images'
 import { FaGreaterThan } from 'react-icons/fa'
-
-type headerPropsType = {
-    section: number
-}
 
 const HEADER_ITEMS = [
     {

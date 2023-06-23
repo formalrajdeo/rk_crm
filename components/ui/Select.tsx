@@ -1,15 +1,5 @@
 import React from 'react'
 
-type selectPropsType = {
-    type: string,
-    id: string,
-    placeholder: string,
-    required: boolean,
-    options: Array<{ option: string, value: string }>,
-    handleChange: any,
-    state: any
-}
-
 const Select = (selectProps: selectPropsType) => {
     const {
         type,

@@ -1,7 +1,7 @@
-import { Label } from '@/components/ui'
 import React from 'react'
-import CreateDynamicElement from './CreateDynamicElement'
-import styles from "./page.module.css";
+import { Label } from '@/components/ui'
+import CreateDynamicElement from '../CreateDynamicElement'
+import styles from "../styles/page.module.css";
 
 const Content = (contentProps: contentPropsType) => {
     const { content, state, handleChange } = contentProps;

@@ -1,14 +1,5 @@
 import React from 'react'
 
-type inputPropsType = {
-    type: string,
-    id: string,
-    placeholder: string,
-    required: boolean,
-    state: any,
-    handleChange: any
-}
-
 const InputText = (inputProps: inputPropsType) => {
     const {
         type,
@@ -18,7 +9,6 @@ const InputText = (inputProps: inputPropsType) => {
         state,
         handleChange
     } = inputProps;
-    console.log('state[id] >> ', id, state[id])
     return (
         <>
             {type !== undefined && <input

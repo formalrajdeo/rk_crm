@@ -18,7 +18,6 @@ type sectionPropsType = {
     section: number,
     setSection: any,
     initialState: any,
-    notify: any,
     SECTION_RADIO_OPTION: any,
     hideModal: boolean,
     setHideModal: any
@@ -42,4 +41,12 @@ type dynamicPropsType = {
 
 type headlinePropsType = {
     headline: string
+}
+
+type modalPropsType = {
+    setHideModal: any
+}
+
+type radioSectionPropsType = {
+    SECTION_RADIO_OPTION: any
 }

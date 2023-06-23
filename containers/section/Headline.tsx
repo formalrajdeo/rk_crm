@@ -1,9 +1,5 @@
 import React from 'react'
 
-type headlinePropsType = {
-    headline: string
-}
-
 const Headline = (headlineProps: headlinePropsType) => {
     const { headline } = headlineProps;
     return (

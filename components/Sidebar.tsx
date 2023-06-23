@@ -3,13 +3,6 @@ import { AiOutlinePlusCircle } from 'react-icons/ai'
 import { RiCalendar2Line } from 'react-icons/ri'
 import { TbLayoutDashboard, TbReport } from 'react-icons/tb'
 
-type sidebarPropsType = {
-    setSidebar: any,
-    sidebar: string,
-    section: number,
-    setHideModal: any
-}
-
 const SIDEBAR_ITEMS = [
     {
         icon: <TbLayoutDashboard size={'1.5em'} />,
@@ -34,7 +27,6 @@ const SIDEBAR_ITEMS = [
 ]
 
 const sidebarHandler = ({ setSidebar, sidebarValue, section, setHideModal }: any) => {
-    console.log('sidebarValue >>> ', sidebarValue, "section >> ", section)
     if (sidebarValue !== "create" && section > 0 && section <= 2) {
         setHideModal(true)
     } else {

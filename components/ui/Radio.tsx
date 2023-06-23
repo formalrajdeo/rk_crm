@@ -1,13 +1,5 @@
 import React from 'react'
 
-type radioPropsType = {
-    radioOptions: Array<{
-        name: string,
-        value: string,
-        label: string
-    }>
-}
-
 const Radio = (radioProps: radioPropsType) => {
     const { radioOptions } = radioProps;
     return (
