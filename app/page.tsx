@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const page = () => {
   const [section, setSection] = useState(0)
   const [sidebar, setSidebar] = useState("create")
-  const [hideSidebar, setHideSidebar] = useState(false)
+  const [hideModal, setHideModal] = useState(false)
 
   const notify = () => {
     toast.error("Fields validation failed!", {
@@ -30,11 +30,10 @@ const page = () => {
       <ToastContainer />
       <div className="flex bg-gray-100">
         <Sidebar
-          setSection={setSection}
           setSidebar={setSidebar}
           sidebar={sidebar}
-          setHideSidebar={setHideSidebar}
-          hideSidebar={hideSidebar}
+          section={section}
+          setHideModal={setHideModal}
         />
         <main className="w-full p-4">
           {section > 2 && sidebar === "create"
@@ -46,6 +45,8 @@ const page = () => {
               section={section}
               setSection={setSection}
               notify={notify}
+              hideModal={hideModal}
+              setHideModal={setHideModal}
             />
           }
           <Footer />

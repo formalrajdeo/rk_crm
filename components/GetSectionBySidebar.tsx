@@ -7,11 +7,13 @@ type getSectionBySidebarPropsType = {
     sidebar: string,
     section: number,
     setSection: any,
-    notify: any
+    notify: any,
+    hideModal: boolean,
+    setHideModal: any
 }
 
 const GetSectionBySidebar = (getSectionBySidebarProps: getSectionBySidebarPropsType) => {
-    const { sidebar, section, setSection, notify } = getSectionBySidebarProps
+    const { sidebar, section, setSection, notify, hideModal, setHideModal } = getSectionBySidebarProps
     if (sidebar === "create") {
         return (
             <>
@@ -26,6 +28,8 @@ const GetSectionBySidebar = (getSectionBySidebarProps: getSectionBySidebarPropsT
                     setSection={setSection}
                     initialState={CONSTANTS.GROUP_SETTINGS[section].INITIAL_STATE}
                     notify={notify}
+                    hideModal={hideModal}
+                    setHideModal={setHideModal}
                 />
             </>
         )

@@ -4,11 +4,10 @@ import { RiCalendar2Line } from 'react-icons/ri'
 import { TbLayoutDashboard, TbReport } from 'react-icons/tb'
 
 type sidebarPropsType = {
-    setSection: any,
     setSidebar: any,
     sidebar: string,
-    setHideSidebar: any,
-    hideSidebar: boolean
+    section: number,
+    setHideModal: any
 }
 
 const SIDEBAR_ITEMS = [
@@ -34,13 +33,17 @@ const SIDEBAR_ITEMS = [
     },
 ]
 
-const sidebarHandler = ({ setSection, setSidebar, sidebarValue }: any) => {
-    // setSection(0)
-    setSidebar(sidebarValue)
+const sidebarHandler = ({ setSidebar, sidebarValue, section, setHideModal }: any) => {
+    console.log('sidebarValue >>> ', sidebarValue, "section >> ", section)
+    if (sidebarValue !== "create" && section > 0 && section <= 2) {
+        setHideModal(true)
+    } else {
+        setSidebar(sidebarValue)
+    }
 }
 
 const Sidebar = (sidebarProps: sidebarPropsType) => {
-    const { setSection, setSidebar, sidebar, setHideSidebar, hideSidebar } = sidebarProps;
+    const { setSidebar, sidebar, section, setHideModal } = sidebarProps;
 
     return (
         <div className="bg-sidebar-black w-24 text-white flex flex-col justify-start items-center max-sm:hidden">
@@ -49,7 +52,7 @@ const Sidebar = (sidebarProps: sidebarPropsType) => {
                     <button
                         key={sidebarItemIndex}
                         onClick={() => sidebarHandler(
-                            { setSection, setSidebar, sidebarValue: sidebarItem.sidebarValue }
+                            { setSidebar, sidebarValue: sidebarItem.sidebarValue, section, setHideModal }
                         )}
                         className={`flex flex-col items-center p-4 w-full 
                         hover:bg-blue-400 hover:text-white 

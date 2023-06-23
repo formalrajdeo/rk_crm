@@ -29,7 +29,7 @@ const Select = (selectProps: selectPropsType) => {
             onChange={(e) => handleChange(e)}
             defaultValue={state[id]}
         >
-            {options.map((option, idx) => {
+            {options.length > 0 && options.map((option, idx) => {
                 return (
                     <option key={idx} value={option.value}>{option.option}</option>
                 )

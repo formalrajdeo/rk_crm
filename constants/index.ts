@@ -295,18 +295,7 @@ export const CONSTANTS = {
                 firm_admin_2_email_id: "",
                 firm_admin_2_mobile_no: "",
             },
-            RADIO_OPTIONS: [
-                {
-                    name: "firm_access_radio",
-                    value: "firm_access_yes",
-                    label: "Yes"
-                },
-                {
-                    name: "firm_access_radio",
-                    value: "firm_access_no",
-                    label: "No"
-                }
-            ],
+            RADIO_OPTIONS: [],
             SECTION: [
                 {
                     headline: "Firm Admin #1:",

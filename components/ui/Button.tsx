@@ -1,28 +1,20 @@
 import React from 'react'
 
 type buttonPropsType = {
-    section: number,
-    setSection: any
+    customStyle: any,
+    type: string,
+    value: string
 }
 
 const Button = (buttonProps: buttonPropsType) => {
-    const { section, setSection } = buttonProps;
+    const { type, value, customStyle } = buttonProps;
 
     return (
-        <div
-            className="flex justify-start items-center"
-            style={{ marginTop: "4rem" }}
-        >
-            <input
-                type="submit"
-                value="SAVE"
-                style={{
-                    backgroundColor: '#A1BBCF',
-                    color: "white",
-                    padding: "1rem 3rem"
-                }}
-            />
-        </div>
+        <input
+            type={type}
+            value={value}
+            style={customStyle}
+        />
     )
 }
 

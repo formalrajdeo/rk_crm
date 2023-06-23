@@ -19,7 +19,9 @@ type sectionPropsType = {
     setSection: any,
     initialState: any,
     notify: any,
-    SECTION_RADIO_OPTION: any
+    SECTION_RADIO_OPTION: any,
+    hideModal: boolean,
+    setHideModal: any
 }
 
 type contentPropsType = {
