@@ -20,6 +20,7 @@ const GetSectionBySidebar = (getSectionBySidebarProps: getSectionBySidebarPropsT
                 />
                 <Section
                     SECTION_NAME={CONSTANTS.GROUP_SETTINGS[section].SECTION_NAME}
+                    SECTION_RADIO_OPTION={CONSTANTS.GROUP_SETTINGS[section].RADIO_OPTIONS}
                     SECTION_DATA={CONSTANTS.GROUP_SETTINGS[section].SECTION}
                     section={section}
                     setSection={setSection}

@@ -4,6 +4,7 @@ export const CONSTANTS = {
     GROUP_SETTINGS: [
         {
             SECTION_NAME: "basic-information",
+            RADIO_OPTIONS: [],
             INITIAL_STATE: {
                 client_group_name: '',
                 email_id: '',
@@ -167,6 +168,18 @@ export const CONSTANTS = {
         },
         {
             SECTION_NAME: "client-access",
+            RADIO_OPTIONS: [
+                {
+                    name: "client_access_radio",
+                    value: "client_access_yes",
+                    label: "Yes"
+                },
+                {
+                    name: "client_access_radio",
+                    value: "client_access_no",
+                    label: "No"
+                }
+            ],
             INITIAL_STATE: {
                 client_admin_1_first_name: "",
                 client_admin_1_last_name: "",
@@ -282,6 +295,18 @@ export const CONSTANTS = {
                 firm_admin_2_email_id: "",
                 firm_admin_2_mobile_no: "",
             },
+            RADIO_OPTIONS: [
+                {
+                    name: "firm_access_radio",
+                    value: "firm_access_yes",
+                    label: "Yes"
+                },
+                {
+                    name: "firm_access_radio",
+                    value: "firm_access_no",
+                    label: "No"
+                }
+            ],
             SECTION: [
                 {
                     headline: "Firm Admin #1:",

@@ -18,7 +18,8 @@ type sectionPropsType = {
     section: number,
     setSection: any,
     initialState: any,
-    notify: any
+    notify: any,
+    SECTION_RADIO_OPTION: any
 }
 
 type contentPropsType = {
