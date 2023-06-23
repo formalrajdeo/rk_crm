@@ -31,6 +31,11 @@
     cursor: pointer;
 }
 
+.modal__container_cancel:hover {
+    color: white;
+    background-color: red;
+}
+
 .modal__container_save {
     background-color: #02A5E2;
     color: white;
@@ -39,6 +44,28 @@
     width: 10rem;
     height: 3.4rem;
     cursor: pointer;
+}
+
+.modal__container_save:hover {
+    color: white;
+    background-color: #32c5fa;
+    border: 1px solid #02A5E2;
+}
+
+.modal__container_close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.section__submit_btn {
+    background-color: #A1BBCF;
+    color: white;
+    padding: 1rem 3rem;
+}
+
+.section__submit_btn:hover {
+    background-color: #2398f1;
 }
 
 /* Laptop View */

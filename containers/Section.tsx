@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
-import { Button } from '@/components/ui'
 import { FormReducer, TOAST } from '@/utils'
 import { Content, Headline, RadioSection, Modal } from './section'
+import styles from './styles/page.module.css'
 
 const Section = (sectionProps: sectionPropsType) => {
     const {
@@ -73,14 +73,11 @@ const Section = (sectionProps: sectionPropsType) => {
                         className="flex justify-start items-center"
                         style={{ marginTop: "4rem" }}
                     >
-                        <Button
+                        <input
                             type='submit'
                             value='SAVE'
-                            customStyle={{
-                                backgroundColor: '#A1BBCF',
-                                color: "white",
-                                padding: "1rem 3rem"
-                            }}
+                            className={styles.section__submit_btn}
+                            readOnly
                         />
                     </div>
 

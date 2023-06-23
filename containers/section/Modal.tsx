@@ -17,10 +17,12 @@ const Modal = (modalProps: modalPropsType) => {
                     <span className='text-xl font-bold'>Unsaved Changes</span>
                 </div>
             </div>
-            <div style={{ position: "absolute", top: '1rem', right: '2rem' }}>
+            <div
+                className={styles.modal__container_close}
+            >
                 <button
                     onClick={() => setHideModal(false)}
-                    type="button"><GrFormClose fontSize={'2em'} /></button>
+                    type="button"><span><GrFormClose fontSize={'2em'} /></span></button>
             </div>
             <div className="">
                 <Image

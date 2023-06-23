@@ -22,7 +22,6 @@ type sidebarPropsType = {
 // ----------- UI TYPES ----------- 
 
 type buttonPropsType = {
-    customStyle: any,
     type: string,
     value: string
 }
